@@ -21,9 +21,7 @@
   ],
   "files": [
     "dist",
-    "types",
-    "src/server",
-    "docs"
+    "types"
   ],
   "main": "./dist/sticky-notes.umd.cjs",
   "module": "./dist/sticky-notes.js",
