@@ -1,0 +1,65 @@
+{
+  "name": "@muyiluop/sticky-notes",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A powerful Web Components-based sticky notes component with dual storage modes (IndexedDB & Remote API). Perfect for adding note-taking functionality to any website. / 功能强大的 Web Components 便签组件，支持本地和远程双存储模式。",
+  "keywords": [
+    "sticky-notes",
+    "web-component",
+    "custom-element",
+    "notes",
+    "memo",
+    "indexeddb",
+    "drag-and-drop",
+    "openresty",
+    "lua",
+    "frontend-component",
+    "ui-component",
+    "便签",
+    "记事本",
+    "网页组件"
+  ],
+  "files": [
+    "dist",
+    "types",
+    "src/server",
+    "docs"
+  ],
+  "main": "./dist/sticky-notes.umd.cjs",
+  "module": "./dist/sticky-notes.js",
+  "types": "./types/sticky-notes.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/sticky-notes.js",
+      "require": "./dist/sticky-notes.umd.cjs",
+      "types": "./types/sticky-notes.d.ts"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muyiluop/sticky-notes.git"
+  },
+  "bugs": {
+    "url": "https://github.com/muyiluop/sticky-notes/issues"
+  },
+  "homepage": "https://github.com/muyiluop/sticky-notes#readme",
+  "author": {
+    "name": "muyiluop",
+    "email": "muyiluop@gmail.com"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3",
+    "vite": "^7.0.4",
+    "vite-plugin-dts": "^4.5.4"
+  }
+}

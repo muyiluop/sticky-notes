@@ -1,0 +1,31 @@
+{
+  "name": "@muyiluop/sticky-notes-server",
+  "version": "1.0.0",
+  "description": "Node.js backend API server for sticky-notes component",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "dotenv -e .env -e .env.production -- node server.js",
+    "dev": "dotenv -e .env -e .env.development -e .env.development.local -- cross-env NODE_ENV=development node --watch server.js"
+  },
+  "keywords": [
+    "sticky-notes",
+    "api",
+    "backend",
+    "express"
+  ],
+  "author": "muyiluop",
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite3": "^9.2.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "cross-env": "^10.1.0",
+    "dotenv-cli": "^10.0.0"
+  }
+}

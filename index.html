@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web 便签组件演示</title>
+    <style>
+      /* 页面基本样式 */
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        margin: 0;
+        padding: 2rem;
+        background-color: #f4f5f7;
+        color: #172b4d;
+        min-height: 200vh; /* 足够长以演示滚动 */
+      }
+
+      h1 {
+        color: #091e42;
+      }
+
+      p {
+        line-height: 1.6;
+      }
+
+      .placeholder-content {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+    <script type="module" src="src/StickyNotes.js"></script>
+  </head>
+  <body>
+    <div class="placeholder-content">
+      <h1>Web 便签组件演示页面</h1>
+      <p>这是一个演示页面，用于展示浮动在页面上的 Web 便签组件。您可以在页面的任何地方创建、移动和编辑便签。</p>
+      <p>右侧的圆形按钮是便签的控制面板开关，点击它可以展开或收起操作菜单。</p>
+      <p>滚动页面，便签和控制面板会保持在原来的位置。</p>
+      <p>尝试创建一个便签，输入一些内容，拖动它，然后刷新页面——您的便签会被自动保存和恢复！</p>
+    </div>
+
+    <!-- 1. 将 Web Component 添加到页面中 -->
+    <sticky-notes></sticky-notes>
+  </body>
+</html>
